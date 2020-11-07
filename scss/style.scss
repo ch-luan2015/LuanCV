@@ -1,6 +1,4 @@
-
-
-$white:    #fff !default;
+$white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -10,481 +8,546 @@ $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black: #000 !default;
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$yellow:  #FFBF55 !default;
-$gray:    #485058 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
-$gray-metal:  #F8972E !default;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$yellow: #ffbf55 !default;
+$gray: #485058 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$gray-metal: #f8972e !default;
 
-$primary:       $gray-metal!default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$primary: $gray-metal !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
 
-
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{list-style:none;padding:0;}
-$color: #FF9800;
-$color-text:#656c6d;
-$color-contact:#000;
+ul {
+  list-style: none;
+  padding: 0;
+}
+$color: #ff9800;
+$color-text: #656c6d;
+$color-contact: #000;
 
-
-.fa-arrow-circle-up{
-	color: $color;
-	}
+.fa-arrow-circle-up {
+  color: $color;
+}
 #header {
-	background-image: url(../img/banner.jpg);
-	
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100vh;
-	min-height: 720px;
-	display: table;
-	position: relative;
-	text-align: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+  background-image: url(../img/banner.jpg);
 
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  display: table;
+  position: relative;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-#menu{
-	background-color: transparent;
-	border:none;
-	margin-top: 50px;
-	.navbar-brand{
-		color: $color;
-		letter-spacing: 1px;
-		font-size: 1.75em;	
-		font-weight: bold;
-		font-style: italic;
-		font-family: 'Kaushan Script';
-	}
-	.nav-link{
-		color: $color;
-	}
+#menu {
+  background-color: transparent;
+  border: none;
+  margin-top: 50px;
+  .navbar-brand {
+    color: $color;
+    letter-spacing: 1px;
+    font-size: 1.75em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Kaushan Script";
+  }
+  .nav-link {
+    color: $color;
+  }
 }
-.navbar-nav li a{
-    transition: background .2s ease-in-out;
+.navbar-nav li a {
+  transition: background 0.2s ease-in-out;
 }
-.navbar-nav li a:hover, .navbar-nav li a.active{
-	color: $color !important;
-}
-
-
-#header{
-	background-image: url(../img/banner.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100vh;
-	min-height: 720px;
-	display: table;
-	position: relative;
-	text-align: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	.header_overlay{
-		position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    background: #111111;
-	    opacity: .85;
-	}
-	.jumbotron{
-		background-color: transparent;
-		color: #fff;
-		padding-top: 300px;
-		padding-bottom: 300px;
-    	display: table-cell;
-	    vertical-align: middle ;
-	    text-align: center;
-	    -webkit-transform: translateY(-2.1rem);
-	    -ms-transform: translateY(-2.1rem);
-	    transform: translateY(-2.1rem);
-	    color: #ffffff;
-	}
-}
-.jumbotron{
-	h1{
-		text-transform: uppercase;
-	}
-}
-@mixin transform-tilt(){
-	$tilt: rotate(360deg);
-
-	-webkit-transform: $tilt; /*ch*/
-	-ms-transform: $tilt; /*IE*/
-	transform: $tilt;
-
+.navbar-nav li a:hover,
+.navbar-nav li a.active {
+  color: $color !important;
 }
 
-$social_padding:10px 15px;
+#header {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  display: table;
+  position: relative;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  .header_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: 0.85;
+  }
+  .jumbotron {
+    background-color: transparent;
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transform: translateY(-2.1rem);
+    -ms-transform: translateY(-2.1rem);
+    transform: translateY(-2.1rem);
+    color: #ffffff;
+  }
+}
+.jumbotron {
+  h1 {
+    text-transform: uppercase;
+  }
+}
+@mixin transform-tilt() {
+  $tilt: rotate(360deg);
+
+  -webkit-transform: $tilt; /*ch*/
+  -ms-transform: $tilt; /*IE*/
+  transform: $tilt;
+}
+
+$social_padding: 10px 15px;
 $social_border: 1px solid #fed136;
 $social_color: #000;
 $social_margin-righ: 5px;
 .banner_social a {
-	display: inline-block;
-	height: 3rem;
-    width: 3rem;
-    background-color: $gray-700;
-    color: $white !important;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 3rem;
-    margin-right: 1rem;
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover {
-      background-color: $primary;
-    }
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  background-color: $gray-700;
+  color: $white !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: $primary;
+  }
 }
-
-
 
 @keyframes scroll {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(46px);
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
 }
 
-@mixin title{
-	text-transform: uppercase;
-    font-weight: 700;
+@mixin title {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /*About*/
 $padding: 100px 0;
-#about{
-	padding: $padding;
-	h1{
-	    @include title;
-	}
+#about {
+  padding: $padding;
+  h1 {
+    @include title;
+  }
 }
-.info{
-	p{
-		color: $color-text;
-	}
-	ul{
-		display: inline-block;
-		margin-bottom: 50px;
-	}
-	ul li{
-		width: 50%;
-	    float: left;
-	    position: relative;
-	    font-size: 18px;
-	    line-height: 32px;
-	    color: #333;
-	}
-	ul li::before{
-	    content: "\f00c";
-	    font-family: fontawesome;
-	    margin-right: 10px;
-	    color: $color;
-	}
-	.btn{
-		border-color:$color;
-		color: #333;
-		margin-right: 20px;
-		&:hover{
-			background-color:$color;
-			color: #fff;
-		}
-		i{
-			margin-right: 7px;
-			font-size: 0.8em;
-		}
+.info {
+  margin-top: 26rem;
+  ul {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  ul li {
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  ul li::before {
+    content: "\f00c";
+    font-family: fontawesome;
+    margin-right: 10px;
+    color: $color;
+  }
+  .downloadCV {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      border-color: $color;
+      color: #333;
+      &:hover {
+        background-color: $color;
+        color: #fff;
+      }
+      i {
+        margin-right: 7px;
+        font-size: 0.8em;
+      }
+    }
+    .btn-down-cv {
+      background-color: $color;
+      color: #333;
+    }
+  }
+}
 
-	}
-	.btn-down-cv{
-		background-color:$color;
-		color:#fff;
-	}
+.personal_detail {
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 80%;
+  .photo {
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    img {
+      width: 100%;
+      height: 100%;
+      padding-top: 10%;
+      border-radius: 0.5rem;
+    }
+  }
+  .svgFocus {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: black;
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      color: white;
+      fill: currentColor;
+    }
+    h1 {
+      margin: 0 0.75rem;
+      color: $white;
+      font-size: 1.125rem;
+      margin: 0 0.75rem;
+      font-weight: 600;
+    }
+  }
 
-}
-.photo{
-	margin-bottom:  20px;
-	img{
-		border-radius: 50%;
-	}
-}
-.personal_detail{
-	ul li{
-		border-bottom: 1px solid #bfb7b7;
-		padding: 5px 0;
-		margin-bottom: 10px;
-	}
+  .personal_info {
+    padding: 1.5rem 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    .personal_description {
+      display: flex;
+      align-items: baseline;
+      margin-top: 1rem;
+      color: #4a5568;
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: currentColor;
+      }
+      p {
+        padding: 0 0.5rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
 
 /*LEARN-HISTORY*/
-#learn{
-	h1{
-		@include title;
-		margin: 100px 0 50px 0;
-	}
+#learn {
+  h1 {
+    @include title;
+    margin: 100px 0 50px 0;
+  }
 }
 .resume::before {
-	left:50%;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    margin-left: -1.5px;
-    background-color: #bfb7b7;
+  left: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #bfb7b7;
 }
-@mixin resume-panel($float, $text-align){
-	padding: 10px 20px 20px 1s00px;
-	float: $float;
-	position: relative;
-	width: 41%;
-    padding: 0 20px 0 20px;
-    text-align: $text-align;
+@mixin resume-panel($float, $text-align) {
+  padding: 10px 20px 20px 1s00px;
+  float: $float;
+  position: relative;
+  width: 41%;
+  padding: 0 20px 0 20px;
+  text-align: $text-align;
 }
-
 
 .resume {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+  li {
     position: relative;
-    padding: 0;
-    list-style: none;
-    margin-top: 40px;
-    li{
-    	position:relative;
-    	margin-bottom: 100px;
-    	min-height: 150px;
-    }
-    li::after{
-    	clear: both;
-    }
-    li .resume-img{
-    	left: 50%;
-    	position:absolute;
-    	border-radius:50%;
-    	margin-left: -70px;
-    }
-    li .resume-img h4{
-		margin-top: 30px;
-		color:#fff;
-		font-size: medium;
-    }
-    li .resume-panel{
-    	@include resume-panel(left,right);
-    }
-    .resume-heading h4{
-    	margin-top: 0;
-	    text-transform: uppercase;
-		font-size: 20px;
-		text-align: center;
-    }
-    .resume-heading h4.subheading{
-    	color: $color;
-    	font-size: 1.2em;
-    }
-    .resume-panel .resume-body p{
-		color: $color-text;
-		text-align: left;
-	}
-	.resume-panel .resume-body img{
-		height: 160px;
-		width: 100%;
-		border-radius: 5%;
-		border: 1px solid $white;
-    }
+    margin-bottom: 100px;
+    min-height: 150px;
+  }
+  li::after {
+    clear: both;
+  }
+  li .resume-img {
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -70px;
+    margin-top: 0;
+  }
+  li .resume-img h4 {
+    margin-top: 30%;
+    color: #fff;
+    font-size: medium;
+  }
+  li .resume-panel {
+    @include resume-panel(left, right);
+  }
+  .resume-heading h4 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+  }
+  .resume-heading h4.subheading {
+    color: $color;
+    font-size: 1.2em;
+  }
+  .resume-panel .resume-body p {
+    color: $color-text;
+    text-align: left;
+  }
+  .resume-panel .resume-body img {
+    height: 160px;
+    width: 100%;
+    border-radius: 5%;
+    border: 1px solid $white;
+  }
 
-    .resume-inverted>.resume-panel{
-		@include resume-panel(right,left);
-	
-	}
-	
+  .resume-inverted > .resume-panel {
+    @include resume-panel(right, left);
+  }
 }
-.resume-img{
-	width:140px;
-	height:140px;
-	background-color:$color;
-    border: 1px solid $color;
+.resume-img {
+  width: 140px;
+  height: 140px;
+  background-color: $color;
+  border: 1px solid $color;
 }
-.resume>li:before, .resume>li:after {
-    content: " ";
-    display: table;
+.resume > li:before,
+.resume > li:after {
+  content: " ";
+  display: table;
 }
 
 /*SKILL*/
-#skill{
-	background: #1a1e23;
-	color: #fff;
-	h1{
-	    @include title;
-	    padding: 100px 0 0 0;
-	}
-	span{
-		float: right;
-	}
-	.skill-progress {
-	    padding-bottom:100px;
-	}
-	.progress{
-		margin-bottom: 20px;
-	}
-
+#skill {
+  background: #1a1e23;
+  color: #fff;
+  h1 {
+    @include title;
+    padding: 100px 0 0 0;
+  }
+  span {
+    float: right;
+  }
+  .skill-progress {
+    padding-bottom: 100px;
+  }
+  .progress {
+    margin-bottom: 20px;
+  }
 }
 .skill-progress .progress {
-    height: 10px;
-    background: #333;
+  height: 10px;
+  background: #333;
 }
 
 @mixin progress-bar($animationName) {
-    float: left;
-    width: 0;
-    height: 100%;
-    font-size: 12px;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-    background-color: $color;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-    animation: $animationName 2s 1 forwards;
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: $color;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  animation: $animationName 2s 1 forwards;
 }
-.progress-bar-html{
-	@include progress-bar(progress-html);
+.progress-bar-html {
+  @include progress-bar(progress-html);
 }
-.progress-bar-css{
-	@include progress-bar(progress-css);
+.progress-bar-css {
+  @include progress-bar(progress-css);
 }
-.progress-bar-javascript{
-	@include progress-bar(progress-javascript);
+.progress-bar-javascript {
+  @include progress-bar(progress-javascript);
 }
-.progress-bar-bootstrap{
-	@include progress-bar(progress-bootstrap);
+.progress-bar-bootstrap {
+  @include progress-bar(progress-bootstrap);
 }
-.progress-bar-php{
-	@include progress-bar(progress-php);
+.progress-bar-php {
+  @include progress-bar(progress-php);
 }
-.progress-bar-mysql{
-	@include progress-bar(progress-mysql);
-}
-
-@mixin progress($width){
-	width: $width;
+.progress-bar-mysql {
+  @include progress-bar(progress-mysql);
 }
 
-@keyframes progress-html { 
-    from { }
-
-    to {@include progress(98%);}
-}
-@keyframes progress-css { 
-    from { }
-
-    to {@include progress(95%);}
-}
-@keyframes progress-javascript { 
-    from { }
-
-    to {@include progress(90%);}
+@mixin progress($width) {
+  width: $width;
 }
 
-@keyframes progress-bootstrap { 
-    from { }
+@keyframes progress-html {
+  from {
+  }
 
-    to {@include progress(94%);}
+  to {
+    @include progress(98%);
+  }
 }
-@keyframes progress-php { 
-    from { }
+@keyframes progress-css {
+  from {
+  }
 
-    to {@include progress(75%);}
+  to {
+    @include progress(95%);
+  }
 }
-@keyframes progress-mysql { 
-    from { }
+@keyframes progress-javascript {
+  from {
+  }
 
-    to {@include progress(80%);}
+  to {
+    @include progress(90%);
+  }
 }
 
+@keyframes progress-bootstrap {
+  from {
+  }
 
-@mixin transform-tilt(){
-	$tilt: rotate(360deg);
+  to {
+    @include progress(94%);
+  }
+}
+@keyframes progress-php {
+  from {
+  }
 
-	-webkit-transform: $tilt; /*ch*/
-	-ms-transform: $tilt; /*IE*/
-	transform: $tilt;
+  to {
+    @include progress(75%);
+  }
+}
+@keyframes progress-mysql {
+  from {
+  }
 
+  to {
+    @include progress(80%);
+  }
+}
+
+@mixin transform-tilt() {
+  $tilt: rotate(360deg);
+
+  -webkit-transform: $tilt; /*ch*/
+  -ms-transform: $tilt; /*IE*/
+  transform: $tilt;
 }
 
 /*project*/
-#project{
-	padding-top:100px;
-	h1{
-	    @include title;
-	}
-	.categories {
-	    padding-bottom: 30px;
-	    text-align: center;
-	    margin-top: 50px;
-		.btn{
-			color: #fff;
-			cursor: pointer;
-			border: #000;
-			&:hover{
-				background-color:#000;
-				border: #000;
-			};
-		}
-		.btn-warning{
-			background-color: $color;
-		}
-	}
+#project {
+  padding-top: 100px;
+  h1 {
+    @include title;
+  }
+  .categories {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 50px;
+    .btn {
+      color: #fff;
+      cursor: pointer;
+      border: #000;
+      &:hover {
+        background-color: #000;
+        border: #000;
+      }
+    }
+    .btn-warning {
+      background-color: $color;
+    }
+  }
 }
-.mix img{
+.mix img {
   -webkit-transition: all 0.5s linear;
-          transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
-.mix img:hover{
-	transform: scale(1.1);
+.mix img:hover {
+  transform: scale(1.1);
 }
 
 /*Contact*/
-#contact{    
-	background-color: #f5f5f5;
-	padding-bottom: 50px;
-	h1{
-	    @include title;
-	    padding-top: 100px;
-	    padding-bottom:50px;
-	}
+#contact {
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+  h1 {
+    @include title;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 }
 .group {
   position: relative;
   margin: 15px 0;
-  p{
-  	color: $color-contact;
+  p {
+    color: $color-contact;
   }
 }
 input,
@@ -503,7 +566,8 @@ input:focus,
 textarea:focus {
   outline: none;
 }
-input:focus ~ label, input:valid ~ label,
+input:focus ~ label,
+input:valid ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label {
   top: -14px;
@@ -535,7 +599,7 @@ label {
   width: 100%;
 }
 .bar:before {
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   bottom: 0px;
@@ -552,31 +616,31 @@ label {
   cursor: pointer;
   font-weight: bold;
 }
-.box_address{
-	overflow: hidden;
+.box_address {
+  overflow: hidden;
 }
-.box_address p:first-child{
-	font-weight: bold;
-	width: 16%;
-	float: left;
-	color:$color-contact;
+.box_address p:first-child {
+  font-weight: bold;
+  width: 16%;
+  float: left;
+  color: $color-contact;
 }
-.box_address p:last-child{
-	color: $color-contact;
-	margin-left: 30px;
-	float: left;
+.box_address p:last-child {
+  color: $color-contact;
+  margin-left: 30px;
+  float: left;
 }
-.group > p{
-	font-weight: bold;
-	font-size: 18px;
+.group > p {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /*Footer*/
 #footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    h5{
-    	font-size: 14px;
-    }
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  h5 {
+    font-size: 14px;
+  }
 }
