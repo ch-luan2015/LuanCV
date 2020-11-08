@@ -156,17 +156,19 @@ ul {
 .personal_detail {
   margin-top: 4rem;
   border-radius: 0.5rem;
+  padding: 10%;
   width: 100%;
-  height: 80%; }
+  height: 80%;
+  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
   .personal_detail .photo {
-    overflow: hidden;
     width: 100%;
     height: 70%; }
     .personal_detail .photo img {
       width: 100%;
       height: 100%;
-      padding-top: 10%;
-      border-radius: 0.5rem; }
+      padding-top: 10%; }
   .personal_detail .svgFocus {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     display: flex;
